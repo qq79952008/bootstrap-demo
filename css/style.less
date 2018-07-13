@@ -76,24 +76,22 @@ html,body{
         }
     }
     .navbar-nav{   
-        .active{
+        li.active{
+            background: transparent;
+            color: @color;
             a{
                 background: transparent;
-                color: @color;
+                color: #c21500;
                 &:hover{
                     background: transparent;
-                }
-                &:focus{
-                    background: transparent;
-                    color: @color;
-                }
-            }
+                } 
+            }   
         }
-        a{
-            &:focus{
-               color:@color; 
-           }
-        }
+        // a{
+        //     &:focus{
+        //        color:@color; 
+        //    }
+        // }
     }
     .nav-collapse{
         z-index: 100;
@@ -226,7 +224,7 @@ html,body{
     align-items: center;
     flex-direction: column;
     .author{    
-        font-size: 40px;
+        font-size: 30px;
     }
     .contact{
         display: flex;
@@ -287,16 +285,16 @@ html,body{
            .qq-hide{
                display: none;
                position: absolute;
-               right: -110px;
+               left: 70px;
                top: -40px;
                img{
                    max-width: 100px;
                }
-               .triangle-left{
-                    .triangle(left,#fff,15px);
+               .triangle-right{
+                    .triangle(right,#fff,15px);
                     position: absolute;
                     top: 40px;
-                    left: -15px;
+                    left: 100px;
                 }
            }
        }
