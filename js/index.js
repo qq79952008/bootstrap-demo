@@ -112,6 +112,19 @@ $(document).ready(function () {
         }
     });
 
+    $('.icon-mail').on('touchstart',function(){
+        $('.mail-hide').css('display','block');
+    })
+    $('.icon-mail').on('touchend',function(){
+        $('.mail-hide').css('display','none');
+    })
+    $('.icon-QQ').on('touchstart',function(){
+        $('.qq-hide').css('display','block');
+    })
+    $('.icon-QQ').on('touchend',function(){
+        $('.qq-hide').css('display','none');
+    })
+
     // navgation点击事件
     $('.navbar-nav li').on('click',function(){
         var navbar = $(this).closest('.navbar-nav');

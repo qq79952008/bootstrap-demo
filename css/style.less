@@ -238,8 +238,10 @@ html,body{
             a{
                 color: #fff;
                 text-decoration: none;
-                &:hover{
-                    color: @color;
+                @media screen and (min-width: 768px) {
+                    &:hover{
+                        color: @color;
+                    }
                 }
             }
         }
@@ -249,8 +251,10 @@ html,body{
                 &:hover{
                     color: @color;
                 }
-                &:hover+.mail-hide{
-                    display: block;
+                @media screen and (min-width: 768px) {
+                    &:hover+.mail-hide{
+                        display: block;
+                    }
                 }
             }
            .mail-hide{
@@ -278,9 +282,11 @@ html,body{
                    color: @color;
                    cursor: pointer;
                }
-               &:hover+.qq-hide{
-                    display: block;
-               }
+               @media screen and (min-width: 768px) {
+                    &:hover+.qq-hide{
+                        display: block;
+                    }
+                }
            }
            .qq-hide{
                display: none;
